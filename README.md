@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Tromzo Frontend Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Problem statement
 
-## Available Scripts
+Develop a pseudo front-end application that allows users to list and browse games developed for different platforms.
 
-In the project directory, you can run:
+### Minimum requirement
 
-### `yarn start`
+- Use web APIs to retrieve the details of various games.
+- Utilize the following response parameters:
+- title, platform, score, genre, editors_choice, release_year
+- Implement the functionality to list all the games in a web page.
+- Create a visually-interactive responsive design that lists all the games.
+- Submit your screenshots, source code, instructions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Additional points
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Implement the following features:
+- Search: Search a game by using the name of the game
+- Sort: Filter the scores of all the games in ascending or descending order and games based on the platforms such as PS, Microsoft Windows etc.
+- Autocomplete feature to search games conveniently
 
-### `yarn test`
+### Guide
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Games API: [https://s3-ap-southeast-1.amazonaws.com/he-public-data/gamesarena274f2bf.json](https://s3-ap-southeast-1.amazonaws.com/he-public-data/gamesarena274f2bf.json)
+- Ideal front-end stack
+- JS framework: JavaScript (ReactJS)
+- Implement the custom CSS design. The implementation of Bootstrap or Material Design in your application is favorable.
+- The application can be built by using client-side scripting and does not require any back-end application.
 
-### `yarn build`
+### Data parameters
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The data parameters are as following:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- title: Title of the game
+- platform: Name of the platform for which the game is designed
+- score: Games rating score
+- genre: Genre of the game
+- editors_choice: A value that indicates whether this game is the editor’s choice or not
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+## Run GraphQL server
+#### 1) Go to backend folder
+```
+cd backend
+```
+#### 2) Install Dependencies
+```
+npm install
+```
+#### 3) Run
+```
+node index.js
+```
 
-### `yarn eject`
+---
+## Run frontend
+#### 1) Go to frontend folder
+```
+cd frontend
+```
+#### 2) Install Dependencies
+```
+npm install
+```
+#### 3) Run
+```
+npm run start
+```
+#### 4) Navigate to
+```
+http://localhost:3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Unit Tests
+```
+npm run test
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Screenshots
